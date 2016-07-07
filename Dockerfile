@@ -9,5 +9,6 @@ RUN useradd -m -g users scala
 USER scala
 WORKDIR /home/scala
 RUN mkdir src
+RUN ln -s /home/scala/src/.ivy2 .ivy2
 
 ENTRYPOINT ["/bin/bash"]
